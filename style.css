@@ -1,0 +1,117 @@
+/* Sayfa düzeni ve stil ayarları */
+html,
+body {
+  height: 100%; /* Yükseklik %100 olacak */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Yatayda ortalama */
+  align-items: center; /* Dikeyde ortalama */
+  background-color: #142143;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+#quiz-container {
+  background-color: rgb(226, 216, 216);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  /* text-align: left;  */
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+#question {
+  font-size: 20px;
+  text-align: center;
+}
+
+#choices {
+  margin: 20px 0;
+}
+
+#choices label {
+  display: block;
+  font-size: 18px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+#choices input {
+  margin-right: 10px;
+}
+
+#timer {
+  font-size: 18px;
+  margin-top: 20px;
+  color: red; /* Zamanlayıcı kırmızı olacak */
+}
+
+#result-container {
+  display: none;
+}
+
+#result-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+#result-table th,
+#result-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+#result-table th {
+  background-color: #f0f0f0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+/* Sadece mobil ekranlar için düzenlemeler */
+@media only screen and (max-width: 768px) {
+  #quiz-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  #choices label {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+.buttonContinue {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
